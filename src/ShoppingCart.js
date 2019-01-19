@@ -5,8 +5,13 @@ class Cart {
     getItems(){
         return this.content
     }
+
     addItem(itemName, quantity, price) {
         this.content.push({name: itemName, quantity, pricePerUnit: price})
+    }
+
+    clear(){
+        this.content = []
     }
 }
 
