@@ -13,6 +13,13 @@ class Cart {
     clear(){
         this.content = []
     }
+
+    total(){
+        if(this.content.length === 0) {
+            return 0
+        }
+        return this.content.map(product => product.quantity * product.pricePerUnit).reduce((acc,val) => acc + val)
+    }
 }
 
 const cart = new Cart()
