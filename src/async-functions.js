@@ -19,6 +19,4 @@ function promiseToGiveItBackLater(value) {
     })
 }
 
-promiseToGiveItBackLater(v)
-
 module.exports = {giveItBackLater, addSomePromises, promiseToGiveItBackLater}
