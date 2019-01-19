@@ -10,8 +10,13 @@ function addSomePromises() {
 
 }
 
-function promiseToGiveItBackLater() {
-
+function promiseToGiveItBackLater(value) {
+    return new Promise((resolve) => {
+        function loadComplete() {
+            resolve(value)
+        }
+        setTimeout(loadComplete, 200)    
+    })
 }
 
 module.exports = {giveItBackLater, addSomePromises, promiseToGiveItBackLater}
