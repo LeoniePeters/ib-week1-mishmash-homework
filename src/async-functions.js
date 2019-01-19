@@ -6,7 +6,10 @@ function giveItBackLater(value,callback) {
 
 }
 
-function addSomePromises() {
+function addSomePromises(somePromise) {
+    somePromise(value)
+        .then(value => valuevalue)
+        .catch(value => valuevaluevalue)
 
 }
 
