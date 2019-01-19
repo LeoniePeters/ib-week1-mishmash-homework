@@ -1,4 +1,8 @@
-function giveItBackLater() {
+function giveItBackLater(value,callback) {
+    function loadComplete() {
+        callback(value)
+    }
+    setTimeout(loadComplete, 200)
 
 }
 
