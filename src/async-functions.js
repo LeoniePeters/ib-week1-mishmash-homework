@@ -6,11 +6,13 @@ function giveItBackLater(value,callback) {
 
 }
 
-function addSomePromises(somePromise) {
-    somePromise(value)
-        .then(value => valuevalue)
-        .catch(value => valuevaluevalue)
+//In the next function I was unable to figure out what to do.
+// I don't fully grasp the concept of chaining promises yet.
 
+function addSomePromises(somePromise) {
+    return somePromise
+        .then((value) => {console.log(value.repeat(2))})
+        .catch((error) => {console.error(error.repeat(3))})
 }
 
 function promiseToGiveItBackLater(value) {
